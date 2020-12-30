@@ -1,0 +1,36 @@
+.item-cont {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: blue;
+    padding: 10px;
+    margin: 10px 0;
+    border: 2px black solid;
+    border-radius: 10px;
+}
+
+.item {
+    color: white;
+    font-size: 30px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 5cm;
+}
+
+.delete {
+    background-color: red;
+    color: white;
+    font-size: 30px;
+    border-radius: 5px;
+}
+
+.edit {
+    background-color: green;
+    color: white;
+    font-size: 30px;
+    border-radius: 5px;
+}

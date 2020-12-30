@@ -1,0 +1,24 @@
+.app-cont {
+    width: 20cm;
+    margin: 0 auto;
+}
+
+.app-header {
+    width: 100%;
+    margin: 0 0 40px 0;
+    height: 80px;
+    background-color: greenyellow;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 2px black solid;
+}
+
+h1 {
+    margin: 0;
+    text-align: center;
+}
+
+body {
+    margin: 0;
+}

@@ -34,13 +34,13 @@ let Form = props => {
             <input 
                 className="form-input"
                 type="text" 
-                placeholder="Add a todo"
+                placeholder={props.placeholder}
                 ref={focus}
                 value={input}
                 name="text"
                 onChange={handleChange}
             />
-            <button className="form-button">Add an item</button>
+            <button className="form-button">{props.buttonText}</button>
         </form>
     )
 }

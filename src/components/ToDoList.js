@@ -16,21 +16,23 @@ let ToDoList = ({todos, completeTodo, removeTodo, editTodo}) => {
         })
     }
 
-    if(edit.id) {
-        return <Form onSubmit={submitUpdate} />
-    }
-
     return todos.map((todo, ind) => (
         <div
             className="item-cont" 
-            key={ind}>
-            <div 
-                className="item"
-                key={todo.id}
-                onClick={() => completeTodo(todo.id)}
-            >
-                {todo.text}
-            </div>
+            key={ind}
+            >{edit.id === todo.id ? <Form 
+                onSubmit={submitUpdate} 
+                placeholder={`Edit text "${todo.text}"`}
+                buttonText={"submit edit"}/> 
+                :
+                <div 
+                    className="item"
+                    key={todo.id}
+                    onClick={() => completeTodo(todo.id)}
+                >
+                    {todo.text}
+                </div>
+                }
             <div className="buttons">
                 <button 
                     onClick={() => removeTodo(todo.id)}

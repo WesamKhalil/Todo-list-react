@@ -48,7 +48,12 @@ let App = props => {
                 <h1>Todays tasks.</h1>
             </div>
             <div className="app-cont">
-                <Form onSubmit={addTodos}/>
+                <div className="form-cont">
+                    <Form 
+                        onSubmit={addTodos}
+                        placeholder={"Add a todo"}
+                        buttonText={"Add an item"}/>
+                </div>
                 <ToDoList 
                     todos={todos}
                     completeTodo={completeTodo}
